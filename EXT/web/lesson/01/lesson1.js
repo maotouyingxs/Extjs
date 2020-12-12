@@ -40,10 +40,23 @@
 
         Ext.define("myWin", {
             extend: 'Ext.window.Window',
-            initComponent: function (arguments) {
+            width: 400,
+            height: 300,
+            newtitle: 'new uspcat',
+            mySetTitle: function () {
+                this.title = this.newtitle;
+            },
+            title: 'uspcat',
+            initComponent: function () {
+                this.mySetTitle();
                 this.callParent(arguments);
             }
         });
+
+        var myWin = Ext.create('myWin', {
+            title:'myWin'
+        });
+        myWin.show();
     });
 })();
 
