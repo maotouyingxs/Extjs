@@ -15,7 +15,7 @@
     <script type="text/javascript" charset="UTF-8" src="../../js/extjs/ext-all-debug.js"></script>
     <%--国际化文件--%>
     <script type="text/javascript" charset="UTF-8" src="../../js/extjs/ext-lang-zh_CN.js"></script>
-
+<%--    <script type="text/javascript" charset="UTF-8" src="../../js/ux/Mywin.js"></script>--%>
     <script type="text/javascript" charset="UTF-8" src="lesson1.js"></script>
 
 </head>
