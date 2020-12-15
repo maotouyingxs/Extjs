@@ -3,6 +3,9 @@ Ext.define("ux.myWin", {
     width: 400,
     height: 300,
     newtitle: 'new uspcat',
+    config: {
+        price:500
+    },
     mySetTitle: function () {
         this.title = this.newtitle;
     },

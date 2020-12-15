@@ -61,9 +61,35 @@
 
         var myWin = Ext.create('ux.myWin', {
             title:'myWin',
+            price:600,
             requires:['ux.myWin']
         });
-        myWin.show();
+        // myWin.show();
+        // alert(myWin.getPrice());
+
+        Ext.define("say", {
+            canSay:function (){
+                alert("hello");
+            }
+        });
+
+        Ext.define("sing",{
+            sing:function (){
+                alert("sing hello");
+
+            }
+        });
+
+        Ext.define("user",{
+            mixins:{
+                say: 'say',
+                sing:'sing'
+            }
+        });
+
+        var u = Ext.create("user",{});
+        u.canSay();
+        u.sing();
     });
 })();
 
